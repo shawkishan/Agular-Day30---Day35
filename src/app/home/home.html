@@ -1,0 +1,15 @@
+<p>home works!</p>
+
+<!-- <a [routerLink]="['/profile',{name:'yes'}]" >Go to Profile page</a> -->
+
+
+<!-- <button  (click)="goToProfile()">Go To progile</button> -->
+ <a routerLink="profile">Go to profile</a>
+
+ <h1>User List</h1>
+
+ <ul>
+    @for (users of user; track users.id) {
+    <li><a routerLink="user/{{users.id}}/{{users.name}}" >{{users.name}}</a></li>
+ }
+ </ul>
